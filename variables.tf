@@ -7,6 +7,5 @@ variable "route_tables" {
 }
 
 variable "destination_cidr" {
-  type    = string
+  type = string
 }
-

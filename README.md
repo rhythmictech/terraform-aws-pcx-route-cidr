@@ -8,10 +8,8 @@ Manage a peering connection route table entry
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
+| destination\_cidr |  | string | n/a | yes |
+| pcx\_id |  | string | n/a | yes |
+| route\_tables |  | list(string) | n/a | yes |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
