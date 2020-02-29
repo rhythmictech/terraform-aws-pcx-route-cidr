@@ -1,11 +1,14 @@
+variable "destination_cidr" {
+  description = "CIDR to add to route tables"
+  type        = string
+}
+
 variable "pcx_id" {
-  type = string
+  description = "Peering Connection"
+  type        = string
 }
 
 variable "route_tables" {
-  type = list(string)
-}
-
-variable "destination_cidr" {
-  type = string
+  description = "Route tables to install route in"
+  type        = list(string)
 }
