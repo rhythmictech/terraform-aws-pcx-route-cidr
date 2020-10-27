@@ -8,6 +8,12 @@ variable "pcx_id" {
   type        = string
 }
 
+variable "route_table_count" {
+  default     = null
+  description = "How many route tables are going to be created?"
+  type        = number
+}
+
 variable "route_tables" {
   description = "Route tables to install route in"
   type        = list(string)
