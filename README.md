@@ -15,13 +15,28 @@ module "pcx_route_cidr1 {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| destination\_cidr | CIDR to add to route tables | string | n/a | yes |
-| pcx\_id | Peering Connection | string | n/a | yes |
-| route\_tables | Route tables to install route in | list(string) | n/a | yes |
+|------|-------------|------|---------|:--------:|
+| destination\_cidr | CIDR to add to route tables | `string` | n/a | yes |
+| pcx\_id | Peering Connection | `string` | n/a | yes |
+| route\_table\_count | How many route tables are going to be created? | `number` | `null` | no |
+| route\_tables | Route tables to install route in | `list(string)` | n/a | yes |
+
+## Outputs
+
+No output.
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
